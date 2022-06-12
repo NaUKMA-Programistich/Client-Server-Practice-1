@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.0-RC"
+    kotlin("jvm") version "1.7.0"
 }
 
 group = "com.programistich"
@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3")
     testImplementation(kotlin("test"))
 }
 
